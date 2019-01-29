@@ -5,6 +5,15 @@ import Title from './components/Title'
 import MemoryCard from './components/MemoryCard'
 import memoryImage from './sampleImage.json'
 
+
+// if ( Math.round(Math.random()) ) {
+//     import memoryImage from './sampleImage.json'
+// }
+// else {
+//     import memoryImage from './memoryImage.json'
+// }
+
+
 class App extends Component {
     state = {
         message: "Click an image to begin!",
