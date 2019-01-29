@@ -19,19 +19,27 @@ class App extends Component {
             let j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
+        this.setState({
+            NumOfImage: array.length
+        });
     }
 
     componentDidMount() {
         this.shuffleArray(memoryImage);
+        this.setState({
+            memoryImage: memoryImage,
+            unselectedImage: memoryImage
+        });
     }
 
-    
+
     selectImage = id => {
         const findImage = this.state.unselectedImage.find(item => item.id === id);
         // console.log(this.state.unselectedImage.id);
         // console.log(id);
         this.shuffleArray(memoryImage);
-        
+        const numOfImage = memoryImage.length;
+
         if (findImage === undefined) {
             // failure to select a new image
             this.setState({
@@ -52,10 +60,12 @@ class App extends Component {
                 memoryImage: memoryImage,
                 unselectedImage: newImage
             });
-            if (this.state.curScore == 16) {
+
+            if (this.state.curScore === numOfImage-1) {
+                // alert("You WIN!");
                 this.setState({
-                    message: "You WIN!",
-                    topScore: (this.state.curScore > this.state.topScore) ? this.state.curScore : this.state.topScore,
+                    message: "You WIN! Start a new Game",
+                    topScore: this.state.curScore + 1,
                     curScore: 0,
                     memoryImage: memoryImage,
                     unselectedImage: memoryImage
