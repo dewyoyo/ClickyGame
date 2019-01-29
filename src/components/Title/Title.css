@@ -1,5 +1,5 @@
 .title {
-    background-image: url('/img/blue-circle-halftone-pattern-background_1017-12473.jpg');
+    background-image: url('/img/puzzle-1765847__340.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -22,5 +22,6 @@
 
 .title p {
     font-size: 1.8em;
+    font-weight: bold;
 }
 
