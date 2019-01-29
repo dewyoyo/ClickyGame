@@ -1,22 +1,22 @@
 .title {
-    background-image: url('/img/supersimple.jpg');
+    background-image: url('/img/blue-circle-halftone-pattern-background_1017-12473.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 280px;
+    min-height: 4.5rem;
     text-align: center;
     vertical-align: center;
     /* opacity: 0.3; */
     /* filter: alpha(opacity=30); */
     /* font-family: 'Holtwood One SC', serif; */
-    color: #fff;
+    color: #002a41;
     text-shadow: 0 0 5px #000;
     margin-bottom: 20px;
     margin-top: 60px;
 }
 
 .title h1 {
-    padding: 5rem;
+    padding: 1.5rem;
     font-size: 3.5em;
 }
 

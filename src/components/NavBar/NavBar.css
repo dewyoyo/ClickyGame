@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #5133a4;
+    background: #002a41;
     min-height: 65px;
     width: 100%;
     text-align: center;
@@ -22,7 +22,7 @@
 
 .nav-pills a:hover {
     color: #fff;
-    background-color: #5133a4 !important;
+    background-color: #002a41 !important;
 }
 
 .desc-normal {

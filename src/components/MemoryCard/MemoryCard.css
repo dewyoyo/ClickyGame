@@ -11,14 +11,21 @@
 }
 
 .card > .img-container {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     overflow: hidden;
     text-align: center;
+    background:#ffffff;
+    /* background:#6CADDC; */
 }
 .card > .img-container img {
     margin-top: 10px;
+    width: 60%
 }
+
+
+
+
 
 .style_prevu_kit
 {

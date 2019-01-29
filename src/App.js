@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import memoryImage from './memoryImage.json'
 import Wrapper from './components/Wrapper'
 import NavBar from './components/NavBar'
 import Title from './components/Title'
 import MemoryCard from './components/MemoryCard'
+import memoryImage from './sampleImage.json'
 
 class App extends Component {
     state = {
@@ -62,7 +62,6 @@ class App extends Component {
             });
 
             if (this.state.curScore === numOfImage-1) {
-                // alert("You WIN!");
                 this.setState({
                     message: "You WIN! Start a new Game",
                     topScore: this.state.curScore + 1,
